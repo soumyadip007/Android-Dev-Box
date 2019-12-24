@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">2Sum</string>
+    <string name="title_activity_toggle_button">ToggleButton</string>
 </resources>
