@@ -13,6 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("lifecycle","onCreate invoked");
+        System.out.println("On Create");
+        System.out.println("On Create");
+        System.out.println("On Create");
+        System.out.println("On Create");
+        System.out.println("On Create");
+
     }
     @Override
     protected void onStart() {
@@ -27,12 +33,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        System.out.println("On Pause");
+        System.out.println("On Pause");
+        System.out.println("On Pause");
+        System.out.println("On Pause");
+        System.out.println("On Pause");
         Log.d("lifecycle","onPause invoked");
     }
     @Override
     protected void onStop() {
         super.onStop();
         Log.d("lifecycle","onStop invoked");
+        System.out.println("On STOP");
+        System.out.println("On STOP");
+        System.out.println("On STOP");
+        System.out.println("On STOP");
+        System.out.println("On STOP");
+
     }
     @Override
     protected void onRestart() {
@@ -43,5 +60,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d("lifecycle","onDestroy invoked");
+        System.out.println("On Destroy");
+        System.out.println("On Destroy");
+        System.out.println("On Destroy");
+        System.out.println("On Destroy");
+        System.out.println("On Destroy");
     }
 }
