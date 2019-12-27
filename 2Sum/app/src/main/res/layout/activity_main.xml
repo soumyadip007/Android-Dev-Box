@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ffd700"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -16,7 +17,9 @@
         android:ems="10"
         android:inputType="number"
         tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="53dp" />
+        tools:layout_editor_absoluteY="53dp"
+        android:backgroundTint="#994554"
+        />
 
     <EditText
         android:id="@+id/editText2"
@@ -28,7 +31,9 @@
         android:ems="10"
         android:inputType="number"
         tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="127dp" />
+        tools:layout_editor_absoluteY="127dp"
+        android:backgroundTint="#153881"
+        />
 
     <Button
         android:id="@+id/button"
@@ -39,5 +44,19 @@
         android:layout_marginTop="109dp"
         android:text="ADD"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="266dp" />
+        tools:layout_editor_absoluteY="266dp"
+        android:backgroundTint="#994554"/>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="ADD"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp"
+        android:backgroundTint="#994554"/>
 </RelativeLayout>
