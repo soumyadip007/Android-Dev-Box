@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
     TextView textview1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+      setContentView(R.layout.activity_main);
 
+        super.onCreate(savedInstanceState);
         textview1=(TextView)findViewById(R.id.textView1);
         picker=(DatePicker)findViewById(R.id.datePicker);
         displayDate=(Button)findViewById(R.id.button1);

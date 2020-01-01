@@ -1,12 +1,13 @@
 package com.soumyadip.checkboxex;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
-import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
     CheckBox pizza,coffe,burger;
     Button buttonOrder;
@@ -46,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 result.append("\nTotal: "+totalamount+"Rs");
                 //Displaying the message on the toast
                 Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_LONG).show();
+
+                Intent i=new Intent(getApplicationContext(),Main2Activity.class);
+                startActivity(i);
+                setContentView(R.layout.activity_main2);
             }
 
         });
