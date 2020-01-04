@@ -47,10 +47,8 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
         lv.setAdapter(adapter);
 
-        //DB
         dbcon = new DBController(this);
 
-        // OnClickListeners
         add_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,18 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 String address = edt_address.getText().toString();
                 String phn = edt_phn.getText().toString();
 
-                if (name == null || TextUtils.isEmpty(name)) {
-                    edt_name.setError("Name field is empty/not valid");
-                    return;
-                }
-                if (address == null || TextUtils.isEmpty(address)) {
-                    edt_address.setError("Address field is empty/not valid");
-                    return;
-                }
-                if (phn == null || TextUtils.isEmpty(phn)) {
-                    edt_phn.setError("Phone field is empty/not valid");
-                    return;
-                }
+
 
                 Employee employee = new Employee(name, address, phn);
                 dbcon.addEmployee(employee);
@@ -129,5 +116,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
 

@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.soumyadip.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Hi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tings"
+        android:orderInCategory="100"
+        android:title="Hello"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actin_tings"
+        android:orderInCategory="100"
+        android:title="Hello Hi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actin_tings"
+        android:orderInCategory="100"
+        android:title="Hello Hi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actin_tings"
+        android:orderInCategory="100"
+        android:title="Hello Hi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actin_tings"
+        android:orderInCategory="100"
+        android:title="Hello Hi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actioettings"
+        android:orderInCategory="100"
+        android:title="Hello Hi"
+        app:showAsAction="never" />
+
+</menu>
