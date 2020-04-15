@@ -11,7 +11,7 @@ import android.widget.ToggleButton;
 import static android.widget.Toast.*;
 
 public class MainActivity extends AppCompatActivity {
-    private ToggleButton toggleButton1, toggleButton2;s
+    private ToggleButton toggleButton1, toggleButton2;
     private Button buttonSubmit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +33,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 StringBuilder result = new StringBuilder();
-                result.append("ToggleButton1 : ").append(toggleButton1.getText());
-                result.append("\nToggleButton2 : ").append(toggleButton2.getText());
+                result.append("ToggleButton1 : ").
+                        append(toggleButton1.getText());
+                result.append("\nToggleButton2 : ").
+                        append(toggleButton2.getText());
                 //Displaying the message in toast
-                Toast.makeText(getApplicationContext(), result.toString(), LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),
+                        result.toString(), LENGTH_LONG).show();
             }
 
         });
