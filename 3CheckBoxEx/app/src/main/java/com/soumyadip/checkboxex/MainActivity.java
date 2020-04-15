@@ -45,12 +45,11 @@ public class MainActivity extends AppCompatActivity {
                     totalamount+=120;
                 }
                 result.append("\nTotal: "+totalamount+"Rs");
-                //Displaying the message on the toast
-                Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_LONG).show();
+                //Displaying the message on the toas
+                //
+                Toast.makeText(getApplicationContext(),
+                        result.toString(), Toast.LENGTH_LONG).show();
 
-                Intent i=new Intent(getApplicationContext(),Main2Activity.class);
-                startActivity(i);
-                setContentView(R.layout.activity_main2);
             }
 
         });
