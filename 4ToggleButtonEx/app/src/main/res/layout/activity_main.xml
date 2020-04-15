@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="51dp"
 
-        android:textOff="Off1"
-        android:textOn="On2"
+        android:textOff="NIIT"
+        android:textOn="Microsoft"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
